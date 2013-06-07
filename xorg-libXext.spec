@@ -1,11 +1,11 @@
 Summary:	X extension library
 Name:		xorg-libXext
-Version:	1.3.1
-Release:	3
+Version:	1.3.2
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXext-%{version}.tar.bz2
-# Source0-md5:	71251a22bc47068d60a95f50ed2ec3cf
+# Source0-md5:	4376101e51bb2c6c44d9ab14344e85ad
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
