@@ -1,11 +1,11 @@
 Summary:	X extension library
 Name:		xorg-libXext
-Version:	1.3.2
-Release:	2
+Version:	1.3.3
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libXext-%{version}.tar.bz2
-# Source0-md5:	4376101e51bb2c6c44d9ab14344e85ad
+# Source0-md5:	52df7c4c1f0badd9f82ab124fb32eb97
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -52,6 +52,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
+
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
